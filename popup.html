@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity App</title>
+
+    <link rel = "stylesheet" href = "popup.css">
+
+    <script type = "text/javascript" src = "popup.js"></script>
+
+    <style>
+        h1 {text-align: center;
+            font-family: 'Brush-Script-MT';
+            font-weight: normal;
+            text-transform: lowercase;
+        }
+    </style>
+
+</head>
+<body>
+    <h1>Track your productivity!</h1>
+    <img id = 'im1' src = "fish_images/fish1.jpg" alt = "image didnt load" class = "center"
+    style = "width:350px; height:250px;">
+    <div class = "container">
+        <img src = "time_images/time_background.png" alt = "image didnt load" class = "center" style = "width:350px; height:90px;">
+        <div id = "display">
+            00:00:00
+        </div>
+
+        <div id = "totalMinutes"></div>
+
+        <div class="buttons">
+            <button id="startStop">Start working!</button>
+            <button id="reset">Reset</button>
+        </div>
+
+    </div>
+</body>
+</html>

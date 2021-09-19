@@ -1,0 +1,29 @@
+{
+    "name": "HackRice2.0",
+    "version": "1.0",
+    "manifest_version": 2,
+    "description": "Fun timer that tracks how long you have studied throughout the day",
+    "content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'",
+    "icons": {
+        "16": "fish_images/fish.png",
+        "48": "fish_images/fish.png",
+        "128": "fish_images/fish.png"
+    },
+    "browser_action": {
+        "default_icon": {
+            "16": "fish_images/fish.png",
+            "48": "fish_images/fish.png",
+            "128": "fish_images/fish.png"
+        },
+        "default_popup": "popup.html",
+        "default_title": "Productivity App"
+
+    },
+    "content_scripts": [
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"],
+            "css": ["content.css"]
+        }
+    ]
+}

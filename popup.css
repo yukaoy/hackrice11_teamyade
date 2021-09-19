@@ -1,0 +1,17 @@
+.container {
+    height: 120px;
+    width: 100%;
+    background-color: #aaf8ff;
+}
+
+#display {
+    width: 100%;
+    font-size: 72px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.buttons {
+    text-align: center;
+    
+}
