@@ -20,18 +20,18 @@
 
 </head>
 <body>
-    <h1>Track your productivity!</h1>
+    <h1 style = "font-family: 'Pokemon GB'; font-weight: normal; font-style: normal;">Track your productivity!</h1>
     <img id = 'im1' src = "fish_images/fish1.jpg" alt = "image didnt load" class = "center"
     style = "width:350px; height:250px;">
     <div class = "container">
-        <img src = "time_images/time_background.png" alt = "image didnt load" class = "center" style = "width:350px; height:90px;">
-        <div id = "display">
+        <div id = "display" style = "font-family: 'Pokemon GB'; font-weight: normal; font-style: normal; z-index:2; position: absolute;">
             00:00:00
         </div>
+        <img src = "time_images/time_background.png" alt = "image didnt load" class = "center" style = "width:350px; height:90px; z-index:1; position:relative;">
 
-        <div id = "totalMinutes"></div>
+        <!-- <div id = "totalMinutes"></div> -->
 
-        <div class="buttons">
+        <div class="buttons" style = "font-family: 'Pokemon GB'; font-weight: normal; font-style: normal;">
             <button id="startStop">Start working!</button>
             <button id="reset">Reset</button>
         </div>
