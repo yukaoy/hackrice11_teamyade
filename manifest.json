@@ -2,8 +2,11 @@
     "name": "HackRice2.0",
     "version": "1.0",
     "manifest_version": 2,
+    "permissions": ["<all_urls>", "notifications", "background"], 
     "description": "Fun timer that tracks how long you have studied throughout the day",
     "content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'",
+    "web_accessible_resources": ["PokemonGB.ttf", "PokemonGB.eot", "PokemonGB.svg", "PokemonGB.woff",
+                                 "PokemonGB.woff2", "PokemonGB.eot?#iefix", "PokemonGB.svg#PokemonGB"],
     "icons": {
         "16": "fish_images/fish.png",
         "48": "fish_images/fish.png",
@@ -18,12 +21,18 @@
         "default_popup": "popup.html",
         "default_title": "Productivity App"
 
+
     },
     "content_scripts": [
         {
             "matches": ["<all_urls>"],
             "js": ["content.js"],
             "css": ["content.css"]
+
         }
-    ]
+    ],
+    "background":{
+        "scripts": ["background.js"],
+        "persistent": true
+    }
 }
