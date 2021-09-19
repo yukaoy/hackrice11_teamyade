@@ -1,12 +1,12 @@
 {
-    "name": "HackRice2.0",
+    "name": "StudyFish",
     "version": "1.0",
     "manifest_version": 2,
     "permissions": ["<all_urls>", "notifications", "background"], 
-    "description": "Fun timer that tracks how long you have studied throughout the day",
+    "description": "Fun timer that tracks how long you have studied throughout the day.  Increase your eFISHiency!!",
     "content_security_policy":"script-src 'self' https://apis.google.com; object-src 'self'",
-    "web_accessible_resources": ["PokemonGB.ttf", "PokemonGB.eot", "PokemonGB.svg", "PokemonGB.woff",
-                                 "PokemonGB.woff2", "PokemonGB.eot?#iefix", "PokemonGB.svg#PokemonGB"],
+    "web_accessible_resources": ["pokemon_font/PokemonGB.ttf", "pokemon_font/PokemonGB.eot", "pokemon_font/PokemonGB.svg", "pokemon_font/PokemonGB.woff",
+                                 "pokemon_font/PokemonGB.woff2", "pokemon_font/PokemonGB.eot?#iefix", "pokemon_font/PokemonGB.svg#PokemonGB", "stylesheet.css"],
     "icons": {
         "16": "fish_images/fish.png",
         "48": "fish_images/fish.png",
@@ -27,7 +27,7 @@
         {
             "matches": ["<all_urls>"],
             "js": ["content.js"],
-            "css": ["content.css"]
+            "css": ["content.css", "pokemon_font/stylesheet.css"]
 
         }
     ],

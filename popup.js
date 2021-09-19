@@ -122,22 +122,35 @@ function changeFishImage(totalMinutes) {
     if (totalMinutes < 20) {
         loc = 'fish_images/fish1.jpg';
     }
-    else if ( (totalMinutes == 20) && (totalSeconds % 60 == 0) ) {
+    else if ((totalMinutes >= 20) && (totalMinutes < 40)) {
         loc = 'fish_images/fish2.jpg';
+        if ((totalMinutes == 20) && (totalSeconds % 60 == 0)){
+            alert("20minutes");
+        }
     }
-    else if((totalMinutes == 40) && (totalSeconds % 60 == 0)){
-        
+    else if((totalMinutes >= 40) && (totalMinutes < 60)){ 
         loc = 'fish_images/fish3.jpg';
+        if((totalMinutes == 40) && (totalSeconds % 60 == 0)) {
+            alert("40minutes");
+        }
     }
-    else if((totalMinutes == 60) && (totalSeconds % 60 == 0)){
+    else if((totalMinutes >= 60) && (totalMinutes < 80)) {
         loc = 'fish_images/fish4.jpg';
+        if ((totalMinutes == 60) && (totalSeconds % 60 == 0)) {
+            alert("60 minutes");
+        }
     }
-    else if((totalMinutes == 80) && (totalSeconds % 60 == 0)){
-        loc = 'fish_images/fish5.jpg';
+    else if((totalMinutes >= 80) && (totalMinutes < 100)){
+        loc = 'fish_images/fish5.png';
+        if ((totalMinutes == 80) && (totalSeconds % 60 == 0)){
+            alert("80minutes");
+        }
     }
-    else if((totalMinutes == 100) && (totalSeconds % 60 == 0)) {
-        loc = 'fish_images/fish6.jpg';
-
+    else if(totalMinutes >= 100) {
+        loc = 'fish_images/fish6.png';
+        if((totalMinutes == 100) && (totalSeconds % 60 == 0)){
+            alert("100minutes");
+        }
     }
     document.getElementById('im1').src = loc;
 }

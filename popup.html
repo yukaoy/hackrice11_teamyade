@@ -10,32 +10,25 @@
 
     <script type = "text/javascript" src = "popup.js"></script>
 
-    <style>
-        h1 {text-align: center;
-            font-family: 'Brush-Script-MT';
-            font-weight: normal;
-            text-transform: lowercase;
-        }
-    </style>
-
 </head>
 <body>
-    <h1 style = "font-family: 'Pokemon GB'; font-weight: normal; font-style: normal;">Track your productivity!</h1>
+    <h1 style = "font-family: 'Monaco'; font-weight: normal; font-style: normal;">Track your productivity!</h1>
     <img id = 'im1' src = "fish_images/fish1.jpg" alt = "image didnt load" class = "center"
     style = "width:350px; height:250px;">
     <div class = "container">
-        <div id = "display" style = "font-family: 'Pokemon GB'; font-weight: normal; font-style: normal; z-index:2; position: absolute;">
+
+        <div id = "display" style = "font-family: 'Monaco'; font-weight: normal; font-style: normal; z-index:2; position: absolute; right: 8px; top: 323px;">
             00:00:00
         </div>
+
         <img src = "time_images/time_background.png" alt = "image didnt load" class = "center" style = "width:350px; height:90px; z-index:1; position:relative;">
 
-        <!-- <div id = "totalMinutes"></div> -->
-
-        <div class="buttons" style = "font-family: 'Pokemon GB'; font-weight: normal; font-style: normal;">
-            <button id="startStop">Start working!</button>
-            <button id="reset">Reset</button>
+        <div class="buttons" style = "font-family: 'Monaco'; font-weight: normal; font-style: normal;">
+            <button id="startStop" style = "font-family: 'Monaco'; font-weight: normal; font-style: normal;">Start working!</button>
+            <button id="reset" style = "font-family: 'Monaco'; font-weight: normal; font-style: normal;">Reset</button>
         </div>
 
     </div>
+    <link rel = "stylesheet" href = "popup.css">
 </body>
 </html>

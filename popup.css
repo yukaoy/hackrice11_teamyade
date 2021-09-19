@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
     font-family: 'Pokemon GB';
     src: url('PokemonGB.eot');
     src: url('PokemonGB.eot?#iefix') format('embedded-opentype'),
@@ -9,18 +9,19 @@
     font-weight: normal;
     font-style: normal;
     font-display: swap;
-}
+} */
 
 .container {
     width: 100%;
-    background-color: #aaf8ff;
+    /* background-color: #aaf8ff; */
 }
 
 #display {
     width: 100%;
-    font-size: 72px;
+    font-size: 60px;
     text-align: center;
     margin: 0px auto;
+    font-family: "Monaco";
 }
 
 .buttons {
